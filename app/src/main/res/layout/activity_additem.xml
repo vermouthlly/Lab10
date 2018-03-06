@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.dell.lab10_code.Additem">
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名：" />
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/add_name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/add_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生日："
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_name"/>
+        <EditText
+            android:id="@+id/et_birth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/add_birth"
+            app:layout_constraintTop_toBottomOf="@+id/et_name"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/add_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物："
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_birth"/>
+        <EditText
+            android:id="@+id/et_gift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/add_gift"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_birth"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:textColor="#fff0fcff"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_gift"
+            android:text="增加" />
+</android.support.constraint.ConstraintLayout>
